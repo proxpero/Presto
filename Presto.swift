@@ -8,7 +8,7 @@ public struct CMark {
         case renderingError
     }
 
-    /// See ## Options in the cmark.h file
+    /// See `## Options` in the cmark.h file
     /// https://github.com/commonmark/cmark/blob/5c2f3341e3c129aeb27f70fe6ca9ed0fea8f2383/src/cmark.h#L531
     public struct Options: OptionSet {
         public let rawValue: Int32
