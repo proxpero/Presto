@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5204621B1F39EAA90060853F /* HTMLEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204621A1F39EAA90060853F /* HTMLEntityTests.swift */; };
+		5204621C1F39EAA90060853F /* HTMLEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204621A1F39EAA90060853F /* HTMLEntityTests.swift */; };
+		5204621D1F39EAA90060853F /* HTMLEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204621A1F39EAA90060853F /* HTMLEntityTests.swift */; };
 		52378B331F38DCF50092B6AE /* Presto.h in Headers */ = {isa = PBXBuildFile; fileRef = 52378B311F38DCCE0092B6AE /* Presto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52378B341F38DCF80092B6AE /* Presto.h in Headers */ = {isa = PBXBuildFile; fileRef = 52378B311F38DCCE0092B6AE /* Presto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52378B351F38DD060092B6AE /* Presto.h in Headers */ = {isa = PBXBuildFile; fileRef = 52378B311F38DCCE0092B6AE /* Presto.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +133,12 @@
 		52378C091F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
 		52378C0A1F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
 		52378C0B1F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
+		52E1A5F91F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
+		52E1A5FA1F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
+		52E1A5FB1F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
+		52E1A6021F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */; };
+		52E1A6031F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */; };
+		52E1A6041F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +166,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5204621A1F39EAA90060853F /* HTMLEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntityTests.swift; sourceTree = "<group>"; };
 		52378B0E1F38DC3A0092B6AE /* Presto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52378B1C1F38DC4A0092B6AE /* Presto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52378B291F38DC600092B6AE /* Presto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +218,8 @@
 		52378B911F38E7840092B6AE /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		52378C041F38EC350092B6AE /* LibcmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibcmarkTests.swift; sourceTree = "<group>"; };
 		52378C081F38F2780092B6AE /* Presto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presto.swift; sourceTree = "<group>"; };
+		52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntity.swift; sourceTree = "<group>"; };
+		52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntitiesData.swift; sourceTree = "<group>"; };
 		52FA28621F38D8D5004AC34C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		52FA28631F38D8DB004AC34C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				52378B641F38E18C0092B6AE /* PrestoTests.swift */,
+				5204621A1F39EAA90060853F /* HTMLEntityTests.swift */,
 				52378C041F38EC350092B6AE /* LibcmarkTests.swift */,
 			);
 			path = Tests;
@@ -334,6 +347,8 @@
 			isa = PBXGroup;
 			children = (
 				52378C081F38F2780092B6AE /* Presto.swift */,
+				52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */,
+				52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */,
 				52FA28621F38D8D5004AC34C /* .gitignore */,
 				52FA28631F38D8DB004AC34C /* README.md */,
 				52378B321F38DCCE0092B6AE /* Info.plist */,
@@ -699,7 +714,9 @@
 				52378BD41F38EBB00092B6AE /* inlines.c in Sources */,
 				52378BCB1F38EBB00092B6AE /* blocks.c in Sources */,
 				52378BCC1F38EBB00092B6AE /* buffer.c in Sources */,
+				52E1A6021F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */,
 				52378BD91F38EBB00092B6AE /* references.c in Sources */,
+				52E1A5FA1F3BA64A00A72298 /* HTMLEntity.swift in Sources */,
 				52378BD01F38EBB00092B6AE /* houdini_href_e.c in Sources */,
 				52378BD81F38EBB00092B6AE /* node.c in Sources */,
 			);
@@ -726,7 +743,9 @@
 				52378BE71F38EBB10092B6AE /* inlines.c in Sources */,
 				52378BDE1F38EBB10092B6AE /* blocks.c in Sources */,
 				52378BDF1F38EBB10092B6AE /* buffer.c in Sources */,
+				52E1A6031F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */,
 				52378BEC1F38EBB10092B6AE /* references.c in Sources */,
+				52E1A5F91F3BA64A00A72298 /* HTMLEntity.swift in Sources */,
 				52378BE31F38EBB10092B6AE /* houdini_href_e.c in Sources */,
 				52378BEB1F38EBB10092B6AE /* node.c in Sources */,
 			);
@@ -753,7 +772,9 @@
 				52378BFA1F38EBB10092B6AE /* inlines.c in Sources */,
 				52378BF11F38EBB10092B6AE /* blocks.c in Sources */,
 				52378BF21F38EBB10092B6AE /* buffer.c in Sources */,
+				52E1A6041F3BAB1D00A72298 /* HTMLEntitiesData.swift in Sources */,
 				52378BFF1F38EBB10092B6AE /* references.c in Sources */,
+				52E1A5FB1F3BA64A00A72298 /* HTMLEntity.swift in Sources */,
 				52378BF61F38EBB10092B6AE /* houdini_href_e.c in Sources */,
 				52378BFE1F38EBB10092B6AE /* node.c in Sources */,
 			);
@@ -764,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52378C051F38EC350092B6AE /* LibcmarkTests.swift in Sources */,
+				5204621B1F39EAA90060853F /* HTMLEntityTests.swift in Sources */,
 				52378B651F38E1920092B6AE /* PrestoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -773,6 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52378C061F38EC350092B6AE /* LibcmarkTests.swift in Sources */,
+				5204621C1F39EAA90060853F /* HTMLEntityTests.swift in Sources */,
 				52378B661F38E1920092B6AE /* PrestoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,6 +805,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52378C071F38EC350092B6AE /* LibcmarkTests.swift in Sources */,
+				5204621D1F39EAA90060853F /* HTMLEntityTests.swift in Sources */,
 				52378B671F38E1930092B6AE /* PrestoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
