@@ -55,12 +55,12 @@ public struct Cmark {
         var result: String?
         try value.withCString {
             guard let buffer = cmark_markdown_to_html($0, Int(strlen($0)), options.rawValue) else {
-                throw CMarkError.parsingError
+                throw CmarkError.parsingError
             }
             defer { free(buffer) }
             result = String(validatingUTF8: buffer)
         }
-        if result == nil { throw CMarkError.parsingError }
+        if result == nil { throw CmarkError.parsingError }
         return result!
     }
 
@@ -108,17 +108,17 @@ public struct Cmark {
             case .latex(let options, let width):
                 buffer = cmark_render_latex(ast, options.rawValue, width)
             }
-            guard buffer != nil else { throw CMarkError.renderingError }
+            guard buffer != nil else { throw CmarkError.renderingError }
             return buffer!
         }
     }
 
     public func render(_ outputType: OutputType) throws -> String {
-        guard let ast = self.ast(options: outputType.options) else { throw CMarkError.parsingError }
+        guard let ast = self.ast(options: outputType.options) else { throw CmarkError.parsingError }
         defer { cmark_node_free(ast); ast.deinitialize() }
         let buffer = try outputType.buffer(with: ast)
         defer { free(buffer); buffer.deinitialize() }
-        guard let result = String(validatingUTF8: buffer) else { throw CMarkError.parsingError }
+        guard let result = String(validatingUTF8: buffer) else { throw CmarkError.parsingError }
         return result
     }
 
