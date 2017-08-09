@@ -1,9 +1,9 @@
 import Foundation
 import libcmark
 
-public struct CMark {
+public struct Cmark {
 
-    public enum CMarkError: Error {
+    public enum CmarkError: Error {
         case parsingError
         case renderingError
     }
