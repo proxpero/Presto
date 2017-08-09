@@ -130,9 +130,9 @@
 		52378C051F38EC350092B6AE /* LibcmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C041F38EC350092B6AE /* LibcmarkTests.swift */; };
 		52378C061F38EC350092B6AE /* LibcmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C041F38EC350092B6AE /* LibcmarkTests.swift */; };
 		52378C071F38EC350092B6AE /* LibcmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C041F38EC350092B6AE /* LibcmarkTests.swift */; };
-		52378C091F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
-		52378C0A1F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
-		52378C0B1F38F2780092B6AE /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Presto.swift */; };
+		52378C091F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
+		52378C0A1F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
+		52378C0B1F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
 		52E1A5F91F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
 		52E1A5FA1F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
 		52E1A5FB1F3BA64A00A72298 /* HTMLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */; };
@@ -217,7 +217,7 @@
 		52378B901F38E7840092B6AE /* utf8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
 		52378B911F38E7840092B6AE /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		52378C041F38EC350092B6AE /* LibcmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibcmarkTests.swift; sourceTree = "<group>"; };
-		52378C081F38F2780092B6AE /* Presto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presto.swift; sourceTree = "<group>"; };
+		52378C081F38F2780092B6AE /* Cmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cmark.swift; sourceTree = "<group>"; };
 		52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntity.swift; sourceTree = "<group>"; };
 		52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntitiesData.swift; sourceTree = "<group>"; };
 		52FA28621F38D8D5004AC34C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 		52FA285B1F38CEEE004AC34C = {
 			isa = PBXGroup;
 			children = (
-				52378C081F38F2780092B6AE /* Presto.swift */,
+				52378C081F38F2780092B6AE /* Cmark.swift */,
 				52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */,
 				52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */,
 				52FA28621F38D8D5004AC34C /* .gitignore */,
