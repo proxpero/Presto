@@ -51,6 +51,11 @@ public struct Cmark {
         self.value = string
     }
 
+    public func renderHTMLEntities() -> Cmark {
+        let newValue = self.value.renderHtmlEntities()
+        return Cmark(newValue)
+    }
+
     public func toHtml(options: Options = .default) throws -> String {
         var result: String?
         try value.withCString {
@@ -142,3 +147,16 @@ public struct Cmark {
         return try render(.latex(options: options, width: width))
     }
 }
+
+#if os(macOS)
+    import AppKit
+    extension Cmark {
+        public func renderAttributedString(options: Options = .default) throws -> NSAttributedString {
+            let cmark = self.renderHTMLEntities()
+            let html = try cmark.renderHtml(options: options)
+            let data = html.data(using: .utf8)!
+            let result = NSAttributedString(html: data, options: [:], documentAttributes: nil)!
+            return result
+        }
+    }
+#endif

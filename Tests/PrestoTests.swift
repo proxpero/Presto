@@ -64,4 +64,14 @@ class PrestoTests: XCTestCase {
         XCTAssertEqual(result!, latex)
     }
 
+#if os(macOS)
+
+    func testAttributedString() {
+        let result = try? Cmark(markdown).renderAttributedString()
+        XCTAssertNotNil(result)
+        print(result!)
+    }
+
+#endif
+
 }

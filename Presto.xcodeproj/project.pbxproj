@@ -133,6 +133,7 @@
 		52378C091F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
 		52378C0A1F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
 		52378C0B1F38F2780092B6AE /* Cmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52378C081F38F2780092B6AE /* Cmark.swift */; };
+		5283DB7F1F3E8F18002A980B /* libmtex2MML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5283DB7E1F3E8F18002A980B /* libmtex2MML.a */; };
 		528B61BE1F3BB22C001567F1 /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B61BD1F3BB22C001567F1 /* Presto.swift */; };
 		528B61BF1F3BB22C001567F1 /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B61BD1F3BB22C001567F1 /* Presto.swift */; };
 		528B61C01F3BB22C001567F1 /* Presto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B61BD1F3BB22C001567F1 /* Presto.swift */; };
@@ -221,6 +222,7 @@
 		52378B911F38E7840092B6AE /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
 		52378C041F38EC350092B6AE /* LibcmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibcmarkTests.swift; sourceTree = "<group>"; };
 		52378C081F38F2780092B6AE /* Cmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cmark.swift; sourceTree = "<group>"; };
+		5283DB7E1F3E8F18002A980B /* libmtex2MML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmtex2MML.a; path = ../mtex2MML/build/libmtex2MML.a; sourceTree = "<group>"; };
 		528B61BD1F3BB22C001567F1 /* Presto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presto.swift; sourceTree = "<group>"; };
 		52E1A5F81F3BA64A00A72298 /* HTMLEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntity.swift; sourceTree = "<group>"; };
 		52E1A6011F3BAB1D00A72298 /* HTMLEntitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLEntitiesData.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5283DB7F1F3E8F18002A980B /* libmtex2MML.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +350,14 @@
 			path = libcmark;
 			sourceTree = "<group>";
 		};
+		5283DB7D1F3E8F18002A980B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5283DB7E1F3E8F18002A980B /* libmtex2MML.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52FA285B1F38CEEE004AC34C = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +372,7 @@
 				52378B681F38E7840092B6AE /* libcmark */,
 				52378B631F38E18C0092B6AE /* Tests */,
 				52378B0F1F38DC3A0092B6AE /* Products */,
+				5283DB7D1F3E8F18002A980B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -898,6 +910,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proxpero.Presto-iOS";
@@ -966,6 +982,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proxpero.Presto-iOS";
 				PRODUCT_NAME = Presto;
@@ -1037,6 +1057,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proxpero.Presto-tvOS";
@@ -1104,6 +1128,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proxpero.Presto-tvOS";
 				PRODUCT_NAME = Presto;
@@ -1178,6 +1206,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1246,6 +1278,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.proxpero.Presto-macOS";

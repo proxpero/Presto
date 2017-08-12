@@ -36,4 +36,9 @@ class HTMLEntityTests: XCTestCase {
         XCTAssertEqual(name?.entityValue, 224)
     }
 
+    func testRenderHTMLEntities() {
+        let string = "\\Aacute"
+        let result = string.renderHtmlEntities()
+        print(result)
+    }
 }

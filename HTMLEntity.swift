@@ -1,5 +1,15 @@
 import Foundation
 
+extension String {
+    public func renderHtmlEntities() -> String {
+        var result = self
+        for entity in HTMLEntity.entities {
+            result = result.replacingOccurrences(of: entity.tex, with: entity.name)
+        }
+        return result
+    }
+}
+
 public struct HTMLEntity {
     let entityName: String
     let entityValue: Int
@@ -12,6 +22,9 @@ public struct HTMLEntity {
     }
     public var hex: String {
         return "&#x\(String(entityValue, radix: 16, uppercase: true));"
+    }
+    public var tex: String {
+        return "\\\(entityName)"
     }
 }
 
