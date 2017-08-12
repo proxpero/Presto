@@ -1,7 +1,5 @@
-import Presto
-import UIKit
 
-let markdown = "This is *my* html."
-let cmark = CMark(markdown)
-let result = try cmark.toHtml()
-
+let phrase = "Miranda Frank Olsen is awesome."
+while 3 > 2 {
+//    print(phrase)
+}
